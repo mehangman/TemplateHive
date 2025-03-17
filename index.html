@@ -1,51 +1,100 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TemplateHive - Home</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>TemplateHive</h1>
-      <nav>
-        <ul>
-          <li><a href="explorer.html">Explorer</a></li>
-          <li><a href="creator.html">Creator</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TemplateHive - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>TemplateHive</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="creator.html">Creator</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <h2>Welcome to TemplateHive</h2>
-      <p>
-        Your one-stop solution for creating professional resumes/biodata or
-        listing your creative templates to earn.
-      </p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Discover the Perfect Design</h2>
+    <p>
+      Explore our curated collection of resume and biodata templates to create a standout profile.
+    </p>
+  </section>
 
-    <section class="features">
-      <div class="card">
-        <h3>Explorer</h3>
+  <!-- Main Content & Sidebar Layout -->
+  <main class="container">
+    <!-- Main (Explorer) Column -->
+    <div class="main-content">
+      <section class="explorer-section">
+        <h2>Explore Our Templates &amp; Designs</h2>
         <p>
-          Create your resume or biodata using our flexible templates. Customize
-          and download in minutes.
+          Choose from a variety of modern, classic, and minimalist templates designed to show off your unique talent and professional style. Customize any template to fit your personal profile. Our showroom displays a selection of our most popular designs.
         </p>
-        <a href="explorer.html" class="btn">Go to Explorer</a>
-      </div>
-      <div class="card">
-        <h3>Creator</h3>
+        <div class="templates-group">
+          <!-- Resume Templates -->
+          <div class="template category">
+            <h3>Resume Templates</h3>
+            <div class="template-list">
+              <div class="template-card">
+                <h4>Modern Resume</h4>
+                <p>
+                  A clean, contemporary design perfect for professionals in tech and creative industries.
+                </p>
+              </div>
+              <div class="template-card">
+                <h4>Classic Resume</h4>
+                <p>
+                  A timeless layout ideal for traditional industries and corporate roles.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Biodata Templates -->
+          <div class="template category">
+            <h3>Biodata Templates</h3>
+            <div class="template-list">
+              <div class="template-card">
+                <h4>Simple Biodata</h4>
+                <p>
+                  An elegant and minimal design, perfect for quickly presenting your essential information.
+                </p>
+              </div>
+              <div class="template-card">
+                <h4>Creative Biodata</h4>
+                <p>
+                  A dynamic and colorful layout designed to make a memorable impression.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="explorer-call">
+          <a href="explorer.html" class="btn">Start Exploring Templates</a>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Sidebar for Creators -->
+    <aside class="sidebar">
+      <section class="creator-sidebar">
+        <h2>For Template Creators</h2>
         <p>
-          Upload your templates, set your prices, and earn by sharing your designs
-          with our community.
+          Are you a talented designer with a passion for clean and creative layouts? Contribute your unique templates and help others create standout resumes and biodata!
         </p>
-        <a href="creator.html" class="btn">Go to Creator</a>
-      </div>
-    </section>
+        <a href="creator.html" class="btn btn-secondary">Submit Your Template</a>
+      </section>
+    </aside>
+  </main>
 
-    <footer>
-      <p>&copy; TemplateHive</p>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; TemplateHive 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
