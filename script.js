@@ -1,40 +1,57 @@
 /* script.js */
 
-// Function to generate a live resume preview from the Explorer form
+// Function to generate Official Resume Preview
 function generateResume() {
-  // Retrieve form values
-  const name = document.getElementById("fullName").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const template = document.getElementById("template").value;
-  const bio = document.getElementById("bio").value;
-
-  // Build a simple resume preview
-  let resumeHTML = `
-    <h2>${name}</h2>
-    <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Phone:</strong> ${phone}</p>
-    <p><strong>Template Style:</strong> ${template}</p>
-    <p><strong>Bio:</strong> ${bio}</p>
+  // Get resume form values
+  const name = document.getElementById('resumeName').value;
+  const email = document.getElementById('resumeEmail').value;
+  const phone = document.getElementById('resumePhone').value;
+  const summary = document.getElementById('resumeSummary').value;
+  const skills = document.getElementById('resumeSkills').value;
+  
+  // Build resume preview content
+  const resumeContent = `
+    <div class="resume-preview-content">
+      <h2>${name}</h2>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone}</p>
+      <h3>Professional Summary</h3>
+      <p>${summary}</p>
+      <h3>Skills</h3>
+      <p>${skills}</p>
+    </div>
   `;
-
-  // Display the preview on the page
-  document.getElementById("resume-output").innerHTML = resumeHTML;
+  
+  // Output the content
+  document.getElementById('resumeOutput').innerHTML = resumeContent;
 }
 
-// Function to simulate template submission in the Creator page
-function submitTemplate(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
-
-  // Get submission values
-  const templateName = document.getElementById("templateName").value;
-  const description = document.getElementById("description").value;
-  const price = document.getElementById("price").value;
-
-  // Display a confirmation message (in a real setup, you would send this data to a backend)
-  const messageDiv = document.getElementById("creator-message");
-  messageDiv.innerHTML = `<p>Thank you for submitting your template: <strong>${templateName}</strong>! We will review it shortly.</p>`;
-
-  // Optionally, reset the form
-  document.getElementById("template-form").reset();
+// Function to generate Marriage Biodata Preview
+function generateBiodata() {
+  // Get biodata form values
+  const name = document.getElementById('bioName').value;
+  const age = document.getElementById('bioAge').value;
+  const height = document.getElementById('bioHeight').value;
+  const religion = document.getElementById('bioReligion').value;
+  const caste = document.getElementById('bioCaste').value;
+  const education = document.getElementById('bioEducation').value;
+  const occupation = document.getElementById('bioOccupation').value;
+  const contact = document.getElementById('bioContact').value;
+  
+  // Build biodata preview content
+  const biodataContent = `
+    <div class="biodata-preview-content">
+      <h2>${name}</h2>
+      <p><strong>Age:</strong> ${age} | <strong>Height:</strong> ${height}</p>
+      <p><strong>Religion:</strong> ${religion} | <strong>Caste:</strong> ${caste}</p>
+      <h3>Education & Occupation</h3>
+      <p><strong>Education:</strong> ${education}</p>
+      <p><strong>Occupation:</strong> ${occupation}</p>
+      <h3>Contact Information</h3>
+      <p>${contact}</p>
+    </div>
+  `;
+  
+  // Output the content
+  document.getElementById('biodataOutput').innerHTML = biodataContent;
 }
