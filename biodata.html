@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TemplateHive - Marriage Biodata Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="logo">
+      <h1>TemplateHive</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Official Resume</a></li>
+        <li><a href="biodata.html" class="active">Marriage Biodata</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Biodata Creator Section -->
+  <section class="builder-section">
+    <h2>Marriage Biodata Creator</h2>
+    <form id="biodataForm">
+      <div class="form-group">
+        <label for="bioName">Full Name</label>
+        <input type="text" id="bioName" name="bioName" placeholder="Your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="bioAge">Age</label>
+        <input type="number" id="bioAge" name="bioAge" placeholder="Your age" required>
+      </div>
+      <div class="form-group">
+        <label for="bioHeight">Height</label>
+        <input type="text" id="bioHeight" name="bioHeight" placeholder="Your height (e.g., 5'7&quot;)" required>
+      </div>
+      <div class="form-group">
+        <label for="bioReligion">Religion</label>
+        <input type="text" id="bioReligion" name="bioReligion" placeholder="Your religion" required>
+      </div>
+      <div class="form-group">
+        <label for="bioCaste">Caste</label>
+        <input type="text" id="bioCaste" name="bioCaste" placeholder="Your caste" required>
+      </div>
+      <div class="form-group">
+        <label for="bioEducation">Education</label>
+        <input type="text" id="bioEducation" name="bioEducation" placeholder="Your education details" required>
+      </div>
+      <div class="form-group">
+        <label for="bioOccupation">Occupation</label>
+        <input type="text" id="bioOccupation" name="bioOccupation" placeholder="Your occupation" required>
+      </div>
+      <div class="form-group">
+        <label for="bioContact">Contact Information</label>
+        <input type="text" id="bioContact" name="bioContact" placeholder="Your contact details" required>
+      </div>
+      <button type="button" onclick="generateBiodata()">Generate Biodata Preview</button>
+    </form>
+
+    <!-- Biodata Preview Area -->
+    <div id="biodataPreview" class="preview-section">
+      <h3>Biodata Preview</h3>
+      <div id="biodataOutput">
+        <!-- Generated Biodata Content appears here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 TemplateHive. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
