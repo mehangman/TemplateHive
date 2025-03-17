@@ -1,100 +1,57 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TemplateHive - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header & Navigation -->
   <header>
-    <h1>TemplateHive</h1>
+    <div class="logo">
+      <h1>TemplateHive</h1>
+    </div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="explorer.html">Explorer</a></li>
-        <li><a href="creator.html">Creator</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resume.html">Official Resume</a></li>
+        <li><a href="biodata.html">Marriage Biodata</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h2>Discover the Perfect Design</h2>
-    <p>
-      Explore our curated collection of resume and biodata templates to create a standout profile.
-    </p>
+    <div class="hero-content">
+      <h2>Craft Your Perfect Profile</h2>
+      <p>Create stunning resumes and beautiful marriage biodata with ease. Choose from a range of professional and elegant designs to present your best self.</p>
+      <a href="resume.html" class="btn">Try Resume Builder</a>
+      <a href="biodata.html" class="btn btn-secondary">Try Biodata Creator</a>
+    </div>
   </section>
 
-  <!-- Main Content & Sidebar Layout -->
-  <main class="container">
-    <!-- Main (Explorer) Column -->
-    <div class="main-content">
-      <section class="explorer-section">
-        <h2>Explore Our Templates &amp; Designs</h2>
-        <p>
-          Choose from a variety of modern, classic, and minimalist templates designed to show off your unique talent and professional style. Customize any template to fit your personal profile. Our showroom displays a selection of our most popular designs.
-        </p>
-        <div class="templates-group">
-          <!-- Resume Templates -->
-          <div class="template category">
-            <h3>Resume Templates</h3>
-            <div class="template-list">
-              <div class="template-card">
-                <h4>Modern Resume</h4>
-                <p>
-                  A clean, contemporary design perfect for professionals in tech and creative industries.
-                </p>
-              </div>
-              <div class="template-card">
-                <h4>Classic Resume</h4>
-                <p>
-                  A timeless layout ideal for traditional industries and corporate roles.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Biodata Templates -->
-          <div class="template category">
-            <h3>Biodata Templates</h3>
-            <div class="template-list">
-              <div class="template-card">
-                <h4>Simple Biodata</h4>
-                <p>
-                  An elegant and minimal design, perfect for quickly presenting your essential information.
-                </p>
-              </div>
-              <div class="template-card">
-                <h4>Creative Biodata</h4>
-                <p>
-                  A dynamic and colorful layout designed to make a memorable impression.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="explorer-call">
-          <a href="explorer.html" class="btn">Start Exploring Templates</a>
-        </div>
-      </section>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <img src="https://via.placeholder.com/400x250?text=Resume+Template" alt="Resume Template">
+      <h3>Official Resume</h3>
+      <p>Professional, modern designs to showcase your career achievements and qualifications.</p>
+      <a href="resume.html" class="btn">Explore Resume Templates</a>
     </div>
-    
-    <!-- Sidebar for Creators -->
-    <aside class="sidebar">
-      <section class="creator-sidebar">
-        <h2>For Template Creators</h2>
-        <p>
-          Are you a talented designer with a passion for clean and creative layouts? Contribute your unique templates and help others create standout resumes and biodata!
-        </p>
-        <a href="creator.html" class="btn btn-secondary">Submit Your Template</a>
-      </section>
-    </aside>
-  </main>
+    <div class="feature-card">
+      <img src="https://via.placeholder.com/400x250?text=Marriage+Biodata" alt="Marriage Biodata">
+      <h3>Marriage Biodata</h3>
+      <p>Elegant and heartfelt designs inspired by the best in marriage biodata profiles.</p>
+      <a href="biodata.html" class="btn">Explore Biodata Templates</a>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; TemplateHive 2023</p>
+    <p>&copy; 2023 TemplateHive. All Rights Reserved.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
